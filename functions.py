@@ -178,7 +178,7 @@ def create_gridded_raster_from_csv(*,
         outputSRS='EPSG:4326',
         noData=-9999,
         # TODO: Define suitable algorithm here. Defaults to inverse distance.
-        algorithm='invdist:power=2.0:smoothing=0.0:radius1=0.0:radius2=0.0:angle=0.0:max_points=0:min_points=0:nodata=0.0',
+        algorithm='invdist:power=2.0:smoothing=0.0:radius1=0.0:radius2=0.0:angle=0.0:max_points=0:min_points=0:nodata=-128',
         zfield=create_raster_from_field
     )
 
